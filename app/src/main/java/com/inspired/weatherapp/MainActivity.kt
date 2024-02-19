@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val btnShowToast = findViewById<Button>(R.id.btnShowToast)
         val btnToSentText = findViewById<Button>(R.id.btnToSentText)
         val etUserMessage = findViewById<EditText>(R.id.etUserMessage)
+        val btmRecyclerViewDemo = findViewById<Button>(R.id.btmRecyclerViewDemo)
 
 
         btnShowToast.setOnClickListener(){
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("user_message",message)
             startActivity(intent)
         }
-
+        btmRecyclerViewDemo.setOnClickListener(){
+            val intent =Intent(this, HobbiesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
