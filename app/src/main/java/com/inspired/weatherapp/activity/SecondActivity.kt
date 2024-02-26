@@ -1,10 +1,10 @@
-package com.inspired.weatherapp
+package com.inspired.weatherapp.activity
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.inspired.weatherapp.R
 
 class SecondActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {

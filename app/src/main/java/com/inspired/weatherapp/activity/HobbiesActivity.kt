@@ -1,9 +1,12 @@
-package com.inspired.weatherapp
+package com.inspired.weatherapp.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.inspired.weatherapp.adapters.HobbiesAdapter
+import com.inspired.weatherapp.R
+import com.inspired.weatherapp.Supplier
 
 class HobbiesActivity : AppCompatActivity() {
 

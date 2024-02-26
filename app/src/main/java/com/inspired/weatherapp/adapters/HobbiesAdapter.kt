@@ -1,13 +1,14 @@
-package com.inspired.weatherapp
+package com.inspired.weatherapp.adapters
 
 import android.content.Context
 import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.inspired.weatherapp.Hobby
+import com.inspired.weatherapp.R
 
 
 class HobbiesAdapter(val context: Context,val hobby: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
@@ -16,7 +17,7 @@ class HobbiesAdapter(val context: Context,val hobby: List<Hobby>) : RecyclerView
         val txvTitle = itemView.findViewById<TextView>(R.id.txvTitle)
 
 
-        fun setData(hobby: Hobby?,position: Int){
+        fun setData(hobby: Hobby?, position: Int){
             txvTitle.text = hobby?.title?.let { Editable.Factory.getInstance().newEditable(it) }
 
         }
